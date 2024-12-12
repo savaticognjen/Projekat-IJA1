@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1920px;
+}
+.navbar {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+}
+.navbar ul li {
+  list-style: none;
+  /* display: flex; */
+  padding: 15px 25px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.navbar ul li:hover {
+  text-decoration: none;
+  background: #444;
+}
+.navbar ul li a:hover {
+  color: #ffff8c;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar {
+    height: 50px;
+  }
+}
+header {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 10px;
+}
+.slika {
+  width: 1700px;
+  margin-top: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.slika:hover {
+  transform: scale(0.95);
+}
+.dugme {
+  padding: 15px 25px;
+  background: #333;
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  bottom: 150px;
+  left: 850px;
+  font-weight: bolder;
+  font-size: larger;
+  justify-content: cent;
+}
+.dugme:hover {
+  background: #ffff8c;
+  color: #333;
+  transition-duration: 0.6s;
+}
+main {
+  align-content: center;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: #333;
+  color: #f4f4f4;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+main h1 {
+  margin-bottom: 10px;
+}
+.uprava {
+  justify-content: center;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.predsednik {
+  display: inline-block;
+  background: #444;
+  color: #f4f4f4;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+}
+.predsednik:hover {
+  display: inline-block;
+  background: #ffff8c;
+  color: #333;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+  transition-duration: 0.6s;
+}
+.predsednik img {
+  float: left;
+  border-radius: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.predsednik p {
+  text-align: justify;
+  margin: 20px;
+}
+.sekretar {
+  display: inline-block;
+  background: #ffff8c;
+  color: #333;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+}
+.sekretar:hover {
+  display: inline-block;
+  background: #333;
+  color: #ffff8c;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+  transition-duration: 0.6s;
+}
+.sekretar img {
+  float: left;
+  border-radius: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.sekretar p {
+  text-align: justify;
+  margin: 20px;
+}
+.komesar {
+  display: inline-block;
+  background: #444;
+  color: #f4f4f4;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+}
+.komesar:hover {
+  display: inline-block;
+  background: #ffff8c;
+  color: #333;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+  transition-duration: 0.6s;
+}
+
+.komesar img {
+  float: left;
+  border-radius: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.komesar p {
+  text-align: justify;
+  margin: 20px;
+}
+h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+footer {
+  text-align: center;
+  background-color: #444;
+  position: relative;
+  padding: 20px;
+  color: #f4f4f4;
+  font-family: sans-serif;
+}
+footer a {
+  text-decoration: none;
+  color: #ffff8c;
+}
+.potpredsednik {
+  display: inline-block;
+  background: #444;
+  color: #f4f4f4;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 5px;
+}
+.potpredsednik:hover {
+  display: inline-block;
+  background: #ffff8c;
+  color: #333;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 5px;
+  transition-duration: 0.6s;
+}
+.potpredsednik img {
+  float: left;
+  border-radius: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.potpredsednik p {
+  text-align: justify;
+  margin: 20px;
+}
+.ekonom {
+  display: inline-block;
+  background: #444;
+  color: #f4f4f4;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 5px;
+}
+.ekonom:hover {
+  display: inline-block;
+  background: #ffff8c;
+  color: #333;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 5px;
+  transition-duration: 0.6s;
+}
+.ekonom img {
+  float: left;
+  border-radius: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.ekonom p {
+  text-align: justify;
+  margin: 20px;
+}
+.bivsisekretar {
+  display: inline-block;
+  background: #444;
+  color: #f4f4f4;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 5px;
+}
+.bivsisekretar:hover {
+  display: inline-block;
+  background: #ffff8c;
+  color: #333;
+  width: 30%;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 5px;
+  transition-duration: 0.6s;
+}
+.bivsisekretar img {
+  float: left;
+  border-radius: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.bivsisekretar p {
+  text-align: justify;
+  margin: 20px;
+}
+.ikluba {
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.rekorder {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.rekorder p {
+  text-align: justify;
+  margin: 0px 300px;
+}
+.rekorder a {
+  text-decoration: none;
+  color: #ffff8c;
+  background: #333;
+  padding: 3px 7px;
+}
+.rekorder a:hover {
+  background: #ffff8c;
+  color: #333;
+  transition-duration: 0.6s;
+}
+.prodavnica {
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.prodavnica img {
+  width: 410px;
+  margin-right: 20px;
+}
+.forme {
+  position: absolute;
+  top: 200px;
+  left: 550px;
+}
+input {
+  padding: 10px 25px;
+  color: #333;
+}
+.forms {
+  position: absolute;
+  top: 260px;
+  left: 550px;
+}
+.forma {
+  position: absolute;
+  top: 310px;
+  left: 550px;
+}
+.formq {
+  position: absolute;
+  top: 310px;
+  left: 670px;
+}
+
+.dugmq {
+  padding: 15px 25px;
+  background: #333;
+  text-decoration: none;
+  color: #fff;
+  position: absolute;
+  top: 350px;
+  left: 550px;
+  font-weight: bolder;
+  font-size: larger;
+  justify-content: cent;
+}
+.dugmq:hover {
+  background: #ffff8c;
+  color: #333;
+  transition-duration: 0.6s;
+}
+table {
+  position: absolute;
+  width: 50%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  top: 450px;
+  left: 550px;
+}
+th,
+td {
+  border: 1px solid #333;
+  padding: 10px;
+}
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.prodza {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: justify;
+  position: absolute;
+  top: 600px;
+  left: 100px;
+  margin: 0px 450px;
+}
+.main {
+  position: relative;
+}
+.vrelipen {
+  width: 80%;
+}
