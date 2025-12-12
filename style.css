@@ -4,6 +4,9 @@
   box-sizing: border-box;
   max-width: 1920px;
 }
+html{
+  margin: 0 auto;
+}
 .navbar {
   height: auto;
   display: flex;
