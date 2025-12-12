@@ -1,0 +1,31 @@
+# Uključi mod_rewrite (za friendly URL-ove)
+RewriteEngine On
+
+# Preusmeri sa HTTP na HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# SEO-friendly URL primer (ako imaš PHP fajlove)
+# RewriteRule ^about/?$ about.php [L]
+
+# Custom error stranice
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+
+# Blokiranje određenih IP adresa (primer)
+# Deny from 123.456.789.000
+
+# Keširanje fajlova radi bržeg učitavanja
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+</IfModule>
+
+# Zaštita foldera lozinkom (primer za folder "admin")
+# AuthType Basic
+# AuthName "Restricted Area"
+# AuthUserFile /putanja/do/.htpasswd
+# Require valid-user
